@@ -68,13 +68,14 @@ def _setup_osf(args):
         sys.exit('You have to specify a project ID via the command line,'
                  ' configuration file or environment variable.')
 
-    password = None
+    password = config.get('password')
     if username is not None:
-        password = os.getenv("OSF_PASSWORD")
-
-        # Prompt user when password is not set
         if password is None:
-            password = getpass.getpass('Please input your password: ')
+            password = os.getenv("OSF_PASSWORD")
+
+            # Prompt user when password is not set
+            if password is None:
+                password = getpass.getpass('Please input your password: ')
 
     return OSF(username=username, password=password)
 

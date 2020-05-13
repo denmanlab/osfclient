@@ -26,18 +26,18 @@ extra_files.append(os.path.join(here, 'VERSION'))
 
 
 setup(
-    name='osfclient',
+    name='osfclient-denmanlab',
     # update `osfclient/__init__.py` as well
     version=__version__,
 
-    description='An OSF command-line library',
+    description='An OSF command-line library extension for the denmanlab',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/dib-lab/osf-cli',
+    url='https://github.com/danieljdenman/osfclient',
 
     # Author details
-    author='The OSF-cli authors',
+    author='The OSF-cli authors; danieljdenman',
     # Choose your license
     license='BSD3',
 
@@ -56,6 +56,8 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'License :: OSI Approved :: BSD License',
         'Topic :: Utilities'
     ],

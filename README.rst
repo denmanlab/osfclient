@@ -8,6 +8,9 @@ osfclient
 
 |travisbadge|
 
+This is a small modification of the osfclient package to allow for use with the Denman Lab 
+at the University of Colarado School of Medicince's experimental workflow
+
 The ``osfclient`` is a python library and a command-line client for up-
 and downloading files to and from your `Open Science
 Framework <//osf.io>`__ projects. The *Open Science Framework* (OSF) is
